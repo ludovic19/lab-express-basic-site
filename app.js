@@ -14,10 +14,10 @@ app.get("/home", (req, res) => {
 //   res.send("<h1>welcome to my home page</h1>");
 // });
 app.get("/about", (req, res) => {
-  res.send("<h1>what about me</h1>");
+  res.sendFile("<h1>what about me</h1>");
 });
 app.get("/works", (req, res) => {
-  res.send("<h1>you can look my works</h1>");
+  res.sendFile("<h1>you can look my works</h1>");
 });
 
 app.listen(port, () => {
